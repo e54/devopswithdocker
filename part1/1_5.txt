@@ -1,0 +1,19 @@
+root@eski-Virtual-Machine:/home/eski# docker images
+REPOSITORY                          TAG       IMAGE ID       CREATED        SIZE
+ubuntu                              latest    ba6acccedd29   11 days ago    72.8MB
+devopsdockeruh/simple-web-service   alpine    fd312adc88e0   7 months ago   15.7MB
+
+// the alpine image is much smaller than ubuntu, it seems
+
+root@eski-Virtual-Machine:/home/eski# docker container ls
+CONTAINER ID   IMAGE                                      COMMAND                 CREATED          STATUS          PORTS     NAMES
+f568d10ff71e   devopsdockeruh/simple-web-service:alpine   "/usr/src/app/server"   17 seconds ago   Up 17 seconds             nice_euler
+root@eski-Virtual-Machine:/home/eski# docker exec -it f56 sh
+/usr/src/app # ls
+server    text.log
+/usr/src/app # tail -f ./text.log
+2021-10-27 10:29:48 +0000 UTC
+Secret message is: 'You can find the source code here: https://github.com/docker-hy'
+2021-10-27 10:29:50 +0000 UTC
+
+// Secret message stuff working nicely in the alpine container

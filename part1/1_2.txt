@@ -1,0 +1,4 @@
+root@eski-Virtual-Machine:/home/eski/devopswithdocker# docker ps -a
+CONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES
+root@eski-Virtual-Machine:/home/eski/devopswithdocker# docker images
+REPOSITORY   TAG       IMAGE ID   CREATED   SIZE
