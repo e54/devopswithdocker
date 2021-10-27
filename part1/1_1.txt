@@ -1,0 +1,6 @@
+root@eski-Virtual-Machine:/home/eski# docker ps -a
+CONTAINER ID   IMAGE     COMMAND                  CREATED         STATUS                      PORTS     NAMES
+7ef20a4b8a7d   nginx     "/docker-entrypoint.…"   2 minutes ago   Exited (0) 18 seconds ago             flamboyant_rosalind
+ba568c9d517b   nginx     "/docker-entrypoint.…"   2 minutes ago   Up 2 minutes                80/tcp    busy_neumann
+f30a7cff21ff   nginx     "/docker-entrypoint.…"   3 minutes ago   Exited (0) 11 seconds ago             epic_wu
+
